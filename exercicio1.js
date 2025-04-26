@@ -138,7 +138,7 @@ ctx.arc(150,300,75,1*Math.PI,1.5*Math.PI,);
 ctx.stroke();
 ctx.closePath();
 
-// arcos 6
+// arcos 6 - meia lua verde
 ctx.beginPath();
 ctx.lineWidth = 2;
 ctx.strokeStyle = 'green';
@@ -205,22 +205,21 @@ ctx1.fillStyle = "#4285F4";
         
 // Desenha o L no canto inferior esquerdo
 ctx1.beginPath();
-ctx1.moveTo(0, 170);
-ctx1.lineTo(0, 250);
-ctx1.lineTo(50, 250);
-// ctx1.lineTo(150, 200);
-// ctx1.lineTo(100, 200);
-ctx1.lineTo(50, 170);
+ctx1.moveTo(0, 200);
+ctx1.fillRect(0, 200, 40, 100);
 ctx1.closePath();
+
+ctx1.beginPath();
+ctx1.arc(0,200,40,1.5*Math.PI,1*Math.PI,)
 ctx1.fill();
 
 ctx1.beginPath();
-ctx1.arc(0, 250, 50, Math.PI, Math.PI / 2, true);
-ctx1.arc(90, 250, 50, Math.PI / 2, 0, true);
-/*
-ctx1.arc(0, 250, 50, Math.PI, Math.PI / 2, true);
-ctx1.arc(90, 250, 50, Math.PI / 2, 0, true);
-*/
+ctx1.moveTo(0, 100);
+ctx1.fillRect(0, 250, 90, 50);
+ctx1.fill();
+
+ctx1.beginPath();
+ctx1.arc(90,300,50,1.5*Math.PI,1*Math.PI,)
 ctx1.fill();
 
 // Casa (base)
@@ -249,6 +248,7 @@ ctx1.fillRect(150, 145, 20, 20);
 ctx1.fillStyle = '#8B4513';
 ctx1.fillRect(50, 170, 10, 30);
 ctx1.fillRect(260, 220, 10, 30);
+// (x, y, width, height)
 
 // Árvores (folhagem)
 ctx1.beginPath();
